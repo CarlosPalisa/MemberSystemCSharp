@@ -13,5 +13,23 @@ namespace MemberSystemCSharp.Controllers
         {
             return View();
         }
+        public ActionResult Enter(string user, string pass)
+        {
+            try
+            {
+                if (user != "admin@admin" && pass != "1234")
+                {
+                    return Content("-1");
+                }
+                else
+                {
+                    return Content("1");
+                }
+            }
+            catch (Exception ex)
+            {
+                return Content("Ocurrio un error..." + ex.Message);
+            }
+        }
     }
 }

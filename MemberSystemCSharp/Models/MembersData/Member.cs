@@ -21,5 +21,6 @@ namespace MemberSystemCSharp.Models.Members
         public List<EvangelicalHistory> EvanHistory { get; set; }
         public List<CategoryMembers> Category { get; set; }
 
-    }
+    }   
+
 }

@@ -11,8 +11,8 @@ namespace MemberSystemCSharp.Models.Churchs
         public string Name { get; set; }
         public string Adress { get; set; }
         public string Location { get; set; }
-        public Groups? Groups { get; set; }
-        public MemberLeader? MemberLeader { get; set; }
-        public MemberPastor MemberPastor { get; set; }
+        //public Groups? Groups { get; set; }
+        //public MemberLeader? MemberLeader { get; set; }
+        //public MemberPastor MemberPastor { get; set; }
     }
 }
