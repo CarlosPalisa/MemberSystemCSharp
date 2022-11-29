@@ -23,6 +23,9 @@ namespace MemberSystemCSharp.Controllers
                 }
                 else
                 {
+                    
+                    Session["User"] = "Carlos";
+                    
                     return Content("1");
                 }
             }

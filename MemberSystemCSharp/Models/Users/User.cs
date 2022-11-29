@@ -7,8 +7,11 @@ using System.Web;
 
 namespace MemberSystemCSharp.Models.Users
 {
-    public class CommonUser : Member
+    public class User : Member
     {
+       
+        public string Email { get; set; } 
+        public string Password { get; set; }
 
     }
 }

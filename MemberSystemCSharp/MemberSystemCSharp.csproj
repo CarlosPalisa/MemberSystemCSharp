@@ -117,11 +117,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppConstant\Help.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AccesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MemberController.cs" />
+    <Compile Include="Filters\VerifySession.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -140,6 +143,7 @@
     <Compile Include="Models\Users\CommonUser.cs" />
     <Compile Include="Models\Users\LeaderServingMember.cs" />
     <Compile Include="Models\Users\ServingMemberUser.cs" />
+    <Compile Include="Models\Users\User.cs" />
     <Compile Include="Models\ViewsModels\UserViewsModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -184,6 +188,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Member\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
