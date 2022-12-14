@@ -12,7 +12,7 @@ namespace MemberSystemCSharp.Controllers
         public ActionResult Index()
         {
             return View();
-        }
+        } 
         public ActionResult Enter(string user, string pass)
         {
             try
@@ -34,5 +34,10 @@ namespace MemberSystemCSharp.Controllers
                 return Content("Ocurrio un error..." + ex.Message);
             }
         }
+        public ActionResult Logoff()
+        {
+            Session["User"] = null;
+        }
+
     }
 }

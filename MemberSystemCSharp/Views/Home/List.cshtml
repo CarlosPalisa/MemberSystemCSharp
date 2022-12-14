@@ -1,6 +1,32 @@
 ﻿
 @{
     ViewBag.Title = "List";
+
+    List<string> names = new List<string>()
+    {
+           "Carlos",
+           "Jose",
+           "Esteban",
+           "Daniel",
+           "Juan",
+           "Exequiel",
+           "Miguel",
+           "Francisco"
+    };
+    List<string> lastNames = new List<string>()
+    {
+           "Palisa",
+           "Alvarez",
+           "Cisnero",
+           "Juarez",
+           "Rojas",
+           "Michel",
+           "Migues",
+           "Juls"
+    };
+
+
+
 }
 
 <h2>@ViewBag.Title.</h2>
@@ -8,6 +34,34 @@
 
 <p>Use this area to provide additional information.</p>
 
+<table data-toggle="table">
+    <thead>
+        <tr>
+            <th>Orden</th>
+            <th>Apellido</th>
+            <th>Nombre</th>
+        </tr>
+    </thead>
+    <tbody>
+        
 
+        @for (int i = 0; i<names.Count; i++)
+        {
+        <tr>
+            <td>@i</td>
+            <td>@lastNames[i]</td>
+            <td>@names[i]</td>
+            <td>
+                <button type="button" class="btn btn-primary btn-sm">Edit</button>
+            </td>
+            <td>
+                <button type="button" class="btn btn-danger btn-sm">Del</button>
+            </td>
+
+        </tr>
+        }
+
+    </tbody>
+</table>
 
 
